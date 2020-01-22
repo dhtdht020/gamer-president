@@ -1,0 +1,32 @@
+name: Create ZIP
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Obtain latest version of the repository
+      uses: actions/checkout@v1
+    - name: Create package.zip and clean up irrelevant files
+      uses: TheDoctor0/zip-release@v0.2.1
+      with:
+        filename: 'package.zip'
+        exclusions: '*.git* README.md'  
+    - name: Create source.zip
+      uses: TheDoctor0/zip-release@v0.2.1
+      with:
+        filename: 'source.zip'
+    - name: Create directory to stage artifacts
+      run: mkdir artifacts
+    - name: Move package.zip to artifacts
+      run: sudo mv package.zip ./artifacts/package.zip
+    - name: Move source.zip to artifacts
+      run: sudo mv source.zip ./artifacts/source.zip
+    - name: Publish artifacts
+      uses: actions/upload-artifact@v1
+      with:
+        name: gamer-president
+        path: artifacts
