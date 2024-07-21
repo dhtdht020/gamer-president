@@ -1,10 +1,12 @@
-# Gamer President
+## https://github.com/Wish-Software/gamer-president
+This page has been moved to @WishSoftware. Get the newest info from the link above!
+Extension Store pages (MANIFEST 2)
+<br>
+https://microsoftedge.microsoft.com/addons/detail/mflbobcghfnjifgemfdcanojeikjelgg
+<br>
+Extension Store pages (Manifest 3)
+<br>
+https://addons.mozilla.org/en-US/firefox/addon/gamer-president/
+https://chromewebstore.google.com/detail/gamer-president/pfckofjmbebonljchcbfoogiiaddeoma
 
-A simple chromium extension: a must-have for almost every gamer. It includes all the well known "Gamer President" features, now in Edge as well! This extension replaces "President" with "Gamer President" on web pages- because plain politics are boring.
-
-## Contributions
-
-Contributions are appreciated, and new versions will be uploaded to extension stores regularly.
-
-## Extension Store pages
-[Microsoft Edge](https://microsoftedge.microsoft.com/addons/detail/mflbobcghfnjifgemfdcanojeikjelgg)
+Original by dhtdht020

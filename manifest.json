@@ -1,7 +1,7 @@
 {
   "name": "Gamer President",
-  "version": "0.0.3",
-  "manifest_version": 2,
+  "version": "0.1.0",
+  "manifest_version": 3,
   "description": "Replaces President with Gamer President for your lovely web experience.",
   "icons": {
     "16": "icons/icon16.png",
@@ -9,17 +9,16 @@
     "128": "icons/icon128.png"
   },
   "default_locale": "en",
-  "permissions": [
-  ],
-    "content_scripts": [
-        {
-            "matches": [
-                "*://*/*"
-            ],
-            "js": [
-                "content.js"
-            ],
-            "run_at": "document_end"
-        }
-    ]
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_end"
+    }
+  ]
 }
